@@ -26,7 +26,7 @@ Installiere den Higgsfield-Website-Skill aus https://github.com/Arnie936/higgsfi
    (einfach beschreiben, welche Website ich will — der Skill übernimmt den Rest).
 ```
 
-> Hinweis: Der Anmelde-Link ist ein Referral-Link des Skill-Autors.
+> Hinweis: Der Anmelde-Link ist ein Referral-Link von mir, danke =)
 
 ## Was der Skill kann
 
