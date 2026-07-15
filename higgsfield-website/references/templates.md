@@ -1,6 +1,6 @@
 # Die 10 Website-Templates
 
-Jedes Template definiert: Shot-Struktur (Clips), Website-Sektionen, Design-Richtung, Copy-Ton. Das Scroll-Konzept (A–G) wird separat und bewusst gewählt — siehe `craft.md`, dort steht auch die Template→Konzept-Zuordnung (z.B. Luxury Product → Exploded View oder Scroll Scrub). Marken-/Beispieldaten sind Platzhalter — durch die Angaben des Nutzers ersetzen. Gemeinsame Defaults: Seedance 2.0, std mode, 16:9 (außer angegeben), kein Audio, ~8s pro Clip, Hero-Bild als Referenz in jedem Clip, Lenis smooth scroll, Scroll-Scrub-Hero als Canvas-Framesequenz.
+Jedes Template definiert: Shot-Struktur (Clips), Website-Sektionen, Design-Richtung, Copy-Ton. Das Scroll-Konzept (A–G) wird separat und bewusst gewählt — siehe `craft.md`, dort steht auch die Template→Konzept-Zuordnung (z.B. Luxury Product → Exploded View oder Scroll Scrub). Marken-/Beispieldaten sind Platzhalter — durch die Angaben des Nutzers ersetzen. Gemeinsame Defaults: Seedance 2.0, std mode, 16:9 (außer angegeben), kein Audio, ~8s pro Clip, Hero-Bild als Referenz in jedem Clip, Lenis smooth scroll, Scroll-Scrub-Hero als Canvas-Framesequenz. Nur der Hero scrubbt — alle Stütz-Clips als normale Autoplay-Loops einbauen (siehe Scrub-Regel in craft.md).
 
 ## 01 · Luxury Product (Uhren, Schmuck, Audio, Sneaker — Premium-Produkte)
 - Clips: HERO ORBIT (360°-Studio-Turntable im schwarzen Void, Rim-Light) · MACRO FLY-THROUGH (extreme Nahaufnahme über Details) · EXPLODED ASSEMBLY (Produkt setzt sich aus schwebenden Einzelteilen zusammen)

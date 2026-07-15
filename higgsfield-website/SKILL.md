@@ -62,7 +62,7 @@ Generiere über die **Higgsfield-MCP-Tools** (Server `higgsfield`, in `.mcp.json
 
 Statische Seite, kein Framework: ein `index.html` (+ `assets/`), Lenis (smooth scroll) und GSAP/ScrollTrigger via CDN.
 
-- Hero: nach dem gewählten Scroll-Konzept umsetzen (Scrub als Canvas-Framesequenz, Exploded View, Push Through etc.); der Hero muss sich schon VOR dem ersten Scroll bewegen.
+- Hero: nach dem gewählten Scroll-Konzept umsetzen (Scrub als Canvas-Framesequenz, Exploded View, Push Through etc.); der Hero muss sich schon VOR dem ersten Scroll bewegen. Nur der Hero scrubbt — Stütz-Clips als normale Autoplay-Loops (Scrub-Regel in craft.md).
 - Sektionen und Copy-Ton gemäß Template in `references/templates.md`; Farben aus den vier OKLCH-Tokens der Design-DNA (nie reines `#000`/`#fff`), Typografie gemäß craft.md.
 - Copy in der Zielsprache nach den Copywriting-Regeln in `references/craft.md`: konkret und falsifizierbar, wenige Worte, selbstbewusst.
 - **Anti-AI-Verbotsliste** aus craft.md einhalten: kein Gradient-Text, kein Glassmorphism, keine identischen Card-Grids, keine Fake-Metriken — die Seite muss designt wirken, nicht generiert.

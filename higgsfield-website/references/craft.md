@@ -14,6 +14,10 @@ Wähle genau EIN Konzept. Leitfrage: **Was BEDEUTET Scrollen für dieses Produkt
 
 Template-Hinweise: Luxury Product → E oder B · Journey/Real Estate → F · E-Commerce → B + Hover-Spins · Restaurant → A oder G · Automotive → B (gechainte Fahrt) · SaaS → G oder B · Agency → B (abstrakt) · Portfolio → B (Orbit).
 
+## Scrub-Regel: Nur der Hero scrubbt
+
+Genau EIN Clip — der Hero — wird an die Scroll-Position gekoppelt (Canvas-Framesequenz). Alle Stütz-Clips (Macro, Kontext, Orbit …) werden als normale, selbstlaufende Videos eingebaut: `<video muted playsinline autoplay loop>`, ggf. gedimmt hinter Copy. Begründung aus der Praxis: ein zweiter Scrub wirkt wie ein eingefrorenes Bild ("Video spielt nicht"), konkurriert mit dem Hero-Wow und macht die Seite zäh. Autoplay zusätzlich per ScrollTrigger-Fallback starten, falls der Browser es blockiert.
+
 ## Video-Gesetze (entscheidend für scrubbare Clips)
 
 - Kamerabewegung auf die Scroll-Achse locken: kein Drift, kein zufälliger Zoom, konstante Geschwindigkeit. Bewegung stoppt nur, wenn der Nutzer die Zeit kontrolliert (Scrub).
