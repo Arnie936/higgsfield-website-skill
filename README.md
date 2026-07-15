@@ -12,13 +12,17 @@ Installiere den Higgsfield-Website-Skill aus https://github.com/Arnie936/higgsfi
 1. Klone das Repo in ein temporäres Verzeichnis und kopiere den Ordner "higgsfield-website"
    nach ".claude/skills/higgsfield-website" im aktuellen Projekt.
    (Frage mich, ob ich ihn stattdessen global unter "~/.claude/skills" haben will.)
-2. Registriere den Higgsfield-MCP-Server im Projekt:
+2. Registriere die MCP-Server IMMER projektbasiert (--scope project), niemals global:
    claude mcp add --scope project --transport http higgsfield https://mcp.higgsfield.ai/mcp
-3. Falls ich noch keinen Higgsfield-Account habe oder die MCP-Verbindung nicht autorisiert ist:
+   claude mcp add --scope project playwright -- npx @playwright/mcp@latest
+3. Prüfe, ob ffmpeg installiert ist (ffmpeg -version). Falls nicht, installiere es passend
+   zum Betriebssystem (Windows: winget install Gyan.FFmpeg / macOS: brew install ffmpeg /
+   Linux: apt install ffmpeg) — frage mich vorher kurz um Erlaubnis.
+4. Falls ich noch keinen Higgsfield-Account habe oder die MCP-Verbindung nicht autorisiert ist:
    Bitte mich, mich über diesen Link anzumelden und die Verbindung freizugeben:
    https://higgsfield.ai/s/mcp-arnold-oberleiter-PGBQCb
-4. Sag mir, dass ich Claude Code einmal neu starten soll, damit der MCP-Server verbindet.
-5. Bestätige die Installation und erkläre mir in 2 Sätzen, wie ich den Skill benutze
+5. Sag mir, dass ich Claude Code einmal neu starten soll, damit die MCP-Server verbinden.
+6. Bestätige die Installation und erkläre mir in 2 Sätzen, wie ich den Skill benutze
    (einfach beschreiben, welche Website ich will — der Skill übernimmt den Rest).
 ```
 
@@ -42,9 +46,8 @@ Installiere den Higgsfield-Website-Skill aus https://github.com/Arnie936/higgsfi
 
 ## Voraussetzungen
 
-- Claude Code mit dem Higgsfield MCP (siehe oben) und Higgsfield-Credits (Seedance 2.0)
-- Playwright MCP für den Browser-Test (in Claude Code: `/plugin` → playwright)
-- ffmpeg für Video-Kompression und Frame-Extraktion
+- Claude Code und Higgsfield-Credits (Seedance 2.0)
+- Higgsfield MCP + Playwright MCP (projektbasiert) und ffmpeg — **fehlt etwas, installiert der Skill es selbst** beim Setup-Check; der Setup-Prompt oben richtet ebenfalls alles ein
 
 ## Struktur
 

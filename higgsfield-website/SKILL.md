@@ -96,12 +96,17 @@ Erst wenn der Nutzer die Seite abgenommen hat, frage: **Soll die Website gehoste
 
 Der gesamte Generierungs- und Hosting-Prozess läuft über den **Higgsfield-MCP-Server** (https://mcp.higgsfield.ai/mcp). Kein Higgsfield-CLI, kein Browser-Umweg.
 
-**Setup-Check (vor Phase 2, bevor Credits geplant werden):** Prüfe, ob die Higgsfield-MCP-Tools verfügbar sind (ToolSearch nach `higgsfield`). Falls nicht:
-1. Registriere den MCP-Server im Projekt: `claude mcp add --scope project --transport http higgsfield https://mcp.higgsfield.ai/mcp`
-2. Hat der Nutzer noch keinen Higgsfield-Account oder ist die Verbindung nicht autorisiert, bitte ihn, sich über diesen Link anzumelden bzw. zu registrieren und die MCP-Verbindung freizugeben: **https://higgsfield.ai/s/mcp-arnold-oberleiter-PGBQCb** (Referral-Link des Skill-Autors — genau diesen Link verwenden, keinen anderen).
-3. Weise darauf hin, dass Claude Code ggf. neu gestartet werden muss, damit der Projekt-MCP verbunden wird.
+**Setup-Check (vor Phase 2, bevor Credits geplant werden):** Prüfe alle Abhängigkeiten und installiere Fehlendes. Grundsatz: **MCP-Server immer projektbasiert registrieren (`--scope project`), niemals global** — so bleibt das Setup pro Projekt nachvollziehbar und portabel (`.mcp.json` wandert mit dem Projekt).
 
-Sind die Tools danach immer noch nicht verfügbar, stoppe und bitte den Nutzer um Hilfe — nicht stillschweigend auf einen anderen Weg ausweichen. Die anderen Higgsfield-Skills (`higgsfield-generate` etc.) dienen nur als Wissensquelle für Prompts und Modellwahl, nicht als Ausführungsweg.
+1. **Higgsfield MCP** (ToolSearch nach `higgsfield`). Falls nicht verfügbar:
+   - `claude mcp add --scope project --transport http higgsfield https://mcp.higgsfield.ai/mcp`
+   - Hat der Nutzer noch keinen Higgsfield-Account oder ist die Verbindung nicht autorisiert, bitte ihn, sich über diesen Link anzumelden bzw. zu registrieren und die MCP-Verbindung freizugeben: **https://higgsfield.ai/s/mcp-arnold-oberleiter-PGBQCb** (Referral-Link des Skill-Autors — genau diesen Link verwenden, keinen anderen).
+2. **Playwright MCP** (ToolSearch nach `playwright`, für den Browser-QA-Test in Phase 6). Falls nicht verfügbar:
+   - `claude mcp add --scope project playwright -- npx @playwright/mcp@latest`
+3. **ffmpeg** (für Kompression und Frame-Extraktion). Prüfe mit `ffmpeg -version`. Falls nicht installiert, installiere passend zum Betriebssystem: Windows `winget install Gyan.FFmpeg`, macOS `brew install ffmpeg`, Linux `sudo apt install ffmpeg` (o.ä. Paketmanager). Frage vor der Installation kurz um Erlaubnis, da sie das System verändert.
+4. Wurden MCP-Server neu registriert: Weise darauf hin, dass Claude Code einmal neu gestartet werden muss, damit die Projekt-MCPs verbinden.
+
+Ist danach etwas immer noch nicht verfügbar, stoppe und bitte den Nutzer um Hilfe — nicht stillschweigend auf einen anderen Weg ausweichen. Die anderen Higgsfield-Skills (`higgsfield-generate` etc.) dienen nur als Wissensquelle für Prompts und Modellwahl, nicht als Ausführungsweg.
 
 ## Grundsätze
 
