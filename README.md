@@ -11,25 +11,31 @@ Installiere den Higgsfield-Website-Skill aus https://github.com/Arnie936/higgsfi
 
 1. Hole den Skill und kopiere den Ordner "higgsfield-website" nach
    ".claude/skills/higgsfield-website" im aktuellen Projekt.
-   (Frage mich, ob ich ihn stattdessen global unter "~/.claude/skills" haben will.)
+   (Frage mich vorher, ob ich ihn projektbasiert oder global haben will —
+   global heisst im Home-Verzeichnis unter "~/.claude/skills".)
    - Wenn git installiert ist: Repo in ein temporäres Verzeichnis klonen.
    - Wenn nicht: KEIN git installieren, sondern das ZIP ohne git laden und entpacken:
      https://github.com/Arnie936/higgsfield-website-skill/archive/refs/heads/main.zip
      (Windows: Invoke-WebRequest + Expand-Archive / macOS+Linux: curl -L + unzip)
    - Lege danach im Projekt-Root eine Datei "AGENTS.md" an (bzw. ergänze eine bestehende),
-     damit auch Nicht-Claude-Agents (Codex, Cursor etc.) den Skill finden. Inhalt:
+     damit jeder Agent den Skill findet. Inhalt:
      "Skills und Konfiguration liegen unter .claude/ — siehe
       .claude/skills/higgsfield-website/SKILL.md fuer den Higgsfield-Website-Workflow."
-2. Registriere die MCP-Server IMMER projektbasiert (--scope project), niemals global:
+2. Registriere diese zwei MCP-Server projektbasiert (nicht global), auf die Art,
+   die DEIN Agent vorsieht:
+   - "higgsfield": HTTP-Transport, URL https://mcp.higgsfield.ai/mcp
+   - "playwright": Befehl "npx @playwright/mcp@latest"
+   In Claude Code z.B.:
    claude mcp add --scope project --transport http higgsfield https://mcp.higgsfield.ai/mcp
    claude mcp add --scope project playwright -- npx @playwright/mcp@latest
+   In anderen Agents (Codex, Cursor …): trage beide in deren MCP-Konfiguration ein.
 3. Prüfe, ob ffmpeg installiert ist (ffmpeg -version). Falls nicht, installiere es passend
    zum Betriebssystem (Windows: winget install Gyan.FFmpeg / macOS: brew install ffmpeg /
    Linux: apt install ffmpeg) — frage mich vorher kurz um Erlaubnis.
 4. Falls ich noch keinen Higgsfield-Account habe oder die MCP-Verbindung nicht autorisiert ist:
    Bitte mich, mich über diesen Link anzumelden und die Verbindung freizugeben:
    https://higgsfield.ai/s/mcp-arnold-oberleiter-PGBQCb
-5. Sag mir, dass ich Claude Code einmal neu starten soll, damit die MCP-Server verbinden.
+5. Sag mir, dass ich den Agent einmal neu starten soll, damit die MCP-Server verbinden.
 6. Bestätige die Installation und erkläre mir in 2 Sätzen, wie ich den Skill benutze
    (einfach beschreiben, welche Website ich will — der Skill übernimmt den Rest).
 ```
