@@ -5,7 +5,7 @@
 Wähle genau EIN Konzept. Leitfrage: **Was BEDEUTET Scrollen für dieses Produkt?** Das Konzept muss zum Produkt passen, nicht zum eigenen Geschmack. Begründe die Wahl in einem Satz und lass sie den Nutzer im Interview bestätigen.
 
 - **A — Ambient Loop:** Ein Hero-Objekt, das einfach schön aussieht; Video loopt, Scroll enthüllt Sektionen. Für Stimmung ohne Transformation (Restaurant, Atmosphäre).
-- **B — Scroll Scrub:** Das Produkt rotiert oder transformiert sich mit der Scroll-Position (Canvas-Framesequenz). Der PDF-Klassiker für Orbits.
+- **B — Scroll Scrub:** Das Produkt rotiert oder transformiert sich mit der Scroll-Position (Canvas-Framesequenz). Der Klassiker für Orbits.
 - **C — Cursor Spotlight:** Das Produkt wird per Cursor aus der Dunkelheit enthüllt. Für Mystik/Reveal.
 - **D — Horizontal Pan Lock:** Vertikales Scrollen bewegt seitlich durch einen Ort oder ein Lineup. Für Kollektionen, Räume, Landschaften.
 - **E — Exploded View:** Ein gebautes Objekt zerlegt sich beim Scrollen in seine Einzelteile — rückwärts scrollen setzt es wieder zusammen. Für alles mit Innenleben (Uhren, Audio, Maschinen). Der stärkste Effekt für Premium-Produkte mit Teilen.

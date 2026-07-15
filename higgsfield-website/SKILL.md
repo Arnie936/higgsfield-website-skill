@@ -1,6 +1,6 @@
 ---
 name: higgsfield-website
-description: Baue eine cinematische "One-Prompt"-Website mit KI-generierten Videos (Higgsfield MCP, Seedance 2.0) und Scroll-Scrub-Animationen — Portfolios, Produkte, E-Commerce, Restaurants, Immobilien, Autos, SaaS, Agenturen, Gyms, Journeys. Nutze diesen Skill IMMER, wenn der Nutzer eine Website mit KI-Video, eine cinematische Landingpage, eine "Higgsfield-Website", eine Scroll-Video-Seite oder eine award-winning One-Pager-Website bauen will — auch wenn er nur sagt "mach mir eine Webseite für X" und ein visuell beeindruckendes Ergebnis erwartet. Der Skill führt ein Interview, schätzt Kosten, holt Freigaben ein und hostet am Ende über den Higgsfield MCP.
+description: Baue eine cinematische Scroll-Website mit KI-generierten Videos (Higgsfield MCP, Seedance 2.0) und Scroll-Scrub-Animationen — Portfolios, Produkte, E-Commerce, Restaurants, Immobilien, Autos, SaaS, Agenturen, Gyms, Journeys. Nutze diesen Skill IMMER, wenn der Nutzer eine Website mit KI-Video, eine cinematische Landingpage, eine "Higgsfield-Website", eine Scroll-Video-Seite oder eine award-winning One-Pager-Website bauen will — auch wenn er nur sagt "mach mir eine Webseite für X" und ein visuell beeindruckendes Ergebnis erwartet. Der Skill führt ein Interview, schätzt Kosten, holt Freigaben ein und hostet am Ende über den Higgsfield MCP.
 ---
 
 # Higgsfield Cinematic Website Builder

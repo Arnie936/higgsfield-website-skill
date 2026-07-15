@@ -63,7 +63,3 @@ higgsfield-website/
     ├── templates.md          # Die 10 Website-Templates (Shots, Sektionen, Design, Copy)
     └── craft.md              # 7 Scroll-Konzepte, Design-DNA, Video-Gesetze, Qualitäts-Gates
 ```
-
-## Credits
-
-Konzept inspiriert vom „One-Prompt Website Pack" (Zubair Trabzada, AI Workshop) — erweitert um Interview-Flow, Kostenfreigaben, Scroll-Konzepte, Qualitäts-Gates und automatisierte Browser-Verifikation.
