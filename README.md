@@ -9,9 +9,13 @@ Kopiere diesen Prompt in **Claude Code** (oder einen anderen Coding-Agent) — e
 ```text
 Installiere den Higgsfield-Website-Skill aus https://github.com/Arnie936/higgsfield-website-skill :
 
-1. Klone das Repo in ein temporäres Verzeichnis und kopiere den Ordner "higgsfield-website"
-   nach ".claude/skills/higgsfield-website" im aktuellen Projekt.
+1. Hole den Skill und kopiere den Ordner "higgsfield-website" nach
+   ".claude/skills/higgsfield-website" im aktuellen Projekt.
    (Frage mich, ob ich ihn stattdessen global unter "~/.claude/skills" haben will.)
+   - Wenn git installiert ist: Repo in ein temporäres Verzeichnis klonen.
+   - Wenn nicht: KEIN git installieren, sondern das ZIP ohne git laden und entpacken:
+     https://github.com/Arnie936/higgsfield-website-skill/archive/refs/heads/main.zip
+     (Windows: Invoke-WebRequest + Expand-Archive / macOS+Linux: curl -L + unzip)
 2. Registriere die MCP-Server IMMER projektbasiert (--scope project), niemals global:
    claude mcp add --scope project --transport http higgsfield https://mcp.higgsfield.ai/mcp
    claude mcp add --scope project playwright -- npx @playwright/mcp@latest
