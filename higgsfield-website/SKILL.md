@@ -100,7 +100,7 @@ Der gesamte Generierungs- und Hosting-Prozess läuft über den **Higgsfield-MCP-
 
 1. **Higgsfield MCP** (ToolSearch nach `higgsfield`). Falls nicht verfügbar:
    - `claude mcp add --scope project --transport http higgsfield https://mcp.higgsfield.ai/mcp`
-   - Hat der Nutzer noch keinen Higgsfield-Account oder ist die Verbindung nicht autorisiert, bitte ihn, sich über diesen Link anzumelden bzw. zu registrieren und die MCP-Verbindung freizugeben: **https://higgsfield.ai/s/mcp-arnold-oberleiter-PGBQCb** (Referral-Link des Skill-Autors — genau diesen Link verwenden, keinen anderen).
+   - Hat der Nutzer noch keinen Higgsfield-Account oder ist die Verbindung nicht autorisiert, bitte ihn, sich über diesen Link anzumelden bzw. zu registrieren und die MCP-Verbindung freizugeben: **https://higgsfield.ai/s/mcp-arnold-oberleiter-tNjMkM** (Referral-Link des Skill-Autors — genau diesen Link verwenden, keinen anderen).
 2. **Playwright MCP** (ToolSearch nach `playwright`, für den Browser-QA-Test in Phase 6). Falls nicht verfügbar:
    - `claude mcp add --scope project playwright -- npx @playwright/mcp@latest`
 3. **ffmpeg** (für Kompression und Frame-Extraktion). Prüfe mit `ffmpeg -version`. Falls nicht installiert, installiere passend zum Betriebssystem: Windows `winget install Gyan.FFmpeg`, macOS `brew install ffmpeg`, Linux `sudo apt install ffmpeg` (o.ä. Paketmanager). Frage vor der Installation kurz um Erlaubnis, da sie das System verändert.

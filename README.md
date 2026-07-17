@@ -34,7 +34,7 @@ Installiere den Higgsfield-Website-Skill aus https://github.com/Arnie936/higgsfi
    Linux: apt install ffmpeg) — frage mich vorher kurz um Erlaubnis.
 4. Falls ich noch keinen Higgsfield-Account habe oder die MCP-Verbindung nicht autorisiert ist:
    Bitte mich, mich über diesen Link anzumelden und die Verbindung freizugeben:
-   https://higgsfield.ai/s/mcp-arnold-oberleiter-PGBQCb
+   https://higgsfield.ai/s/mcp-arnold-oberleiter-tNjMkM
 5. Sag mir, dass ich den Agent einmal neu starten soll, damit die MCP-Server verbinden.
 6. Bestätige die Installation und erkläre mir in 2 Sätzen, wie ich den Skill benutze
    (einfach beschreiben, welche Website ich will — der Skill übernimmt den Rest).
@@ -56,7 +56,7 @@ Installiere den Higgsfield-Website-Skill aus https://github.com/Arnie936/higgsfi
 1. Ordner `higgsfield-website/` nach `.claude/skills/` deines Projekts kopieren (oder `~/.claude/skills/` für global).
    Für Nicht-Claude-Agents (Codex, Cursor …) zusätzlich eine `AGENTS.md` im Projekt-Root anlegen mit dem Verweis: *"Skills und Konfiguration liegen unter `.claude/` — siehe `.claude/skills/higgsfield-website/SKILL.md`."*
 2. Higgsfield MCP hinzufügen: `claude mcp add --scope project --transport http higgsfield https://mcp.higgsfield.ai/mcp`
-3. Higgsfield-Account anlegen / MCP autorisieren: https://higgsfield.ai/s/mcp-arnold-oberleiter-PGBQCb
+3. Higgsfield-Account anlegen / MCP autorisieren: https://higgsfield.ai/s/mcp-arnold-oberleiter-tNjMkM
 4. Claude Code neu starten und z.B. schreiben: *„Mach mir eine cinematische Website für meine Uhrenmarke, mit Exploded-View-Effekt."*
 
 ## Voraussetzungen
