@@ -9,10 +9,8 @@ Kopiere diesen Prompt in **Claude Code** (oder einen anderen Coding-Agent) — e
 ```text
 Installiere den Higgsfield-Website-Skill aus https://github.com/Arnie936/higgsfield-website-skill :
 
-1. Hole den Skill und kopiere den Ordner "higgsfield-website" nach
-   ".claude/skills/higgsfield-website" im aktuellen Projekt.
-   (Frage mich vorher, ob ich ihn projektbasiert oder global haben will —
-   global heisst im Home-Verzeichnis unter "~/.claude/skills".)
+1. Hole den Skill und kopiere den Ordner "higgsfield-website" ins aktuelle Projekt.
+   (Frage mich vorher, ob ich ihn projektbasiert oder global haben will)
    - Wenn git installiert ist: Repo in ein temporäres Verzeichnis klonen.
    - Wenn nicht: KEIN git installieren, sondern das ZIP ohne git laden und entpacken:
      https://github.com/Arnie936/higgsfield-website-skill/archive/refs/heads/main.zip
